@@ -6,8 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-// tslint:disable-next-line:max-line-length
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule} from '@angular/material';
+
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatCardModule} from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { BitcoinPageComponent } from './bitcoin-page/bitcoin-page.component';
+import { FormTodComponent } from './form-tod/form-tod.component';
 
 
 
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     MyNavComponent,
     HomePageComponent,
     TodoPageComponent,
-    BitcoinPageComponent
+    BitcoinPageComponent,
+    FormTodComponent
   ],
   imports: [
     BrowserModule,
@@ -42,9 +45,11 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-   
     MatCardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
