@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,14 +9,28 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HomePageComponent } from './home-page/home-page.component';
+import { TodoPageComponent } from './todo-page/todo-page.component';
+import { BitcoinPageComponent } from './bitcoin-page/bitcoin-page.component';
+
+const appRoutes: Routes = [
+  {path: 'home-page' , component: HomePageComponent},
+  {path: 'todo-page' , component: TodoPageComponent},
+  {path: 'bitcoin-page' , component: BitcoinPageComponent}
+];
+
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavComponent
+    MyNavComponent,
+    HomePageComponent,
+    TodoPageComponent,
+    BitcoinPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
