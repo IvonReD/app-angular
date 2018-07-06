@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatCardModule} from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatButtonModule, MatCardModule} from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -49,6 +49,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     MatInputModule,
+    MatButtonModule,
     ReactiveFormsModule
   ],
   providers: [],
