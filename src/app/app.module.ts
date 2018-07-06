@@ -6,12 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+// tslint:disable-next-line:max-line-length
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule} from '@angular/material';
+
+
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { BitcoinPageComponent } from './bitcoin-page/bitcoin-page.component';
+
+
 
 const appRoutes: Routes = [
   {path: 'home-page' , component: HomePageComponent},
@@ -37,6 +42,8 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+   
+    MatCardModule,
     BrowserAnimationsModule
   ],
   providers: [],
