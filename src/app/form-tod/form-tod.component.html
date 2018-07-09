@@ -19,30 +19,7 @@
       <input mat-raised-button color="primary" type="submit" class="button expanded" value="Submit Form" [disabled] = "!rForm.valid">
     </div>
   </form>
-</div>
-
-
-<!-- <div *ngIf = "!name; else forminfo">
-    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
-      <div class="form-container">
-        <div class = "row columns">
-          <h3> New Task</h3>
-          <label>Name 
-              <input  type="text" formControlName="name">
-          </label>
-          <label> Descripcion
-              <textarea  formControlName="description"></textarea>
-          </label>
-          <label for="validate"> Minimo 3 caracteres</label>
-          <input type="checkbox" name="validate" formControlName= "validate" value="1"> Add  
-          <input  type="submit" class="button expanded" value="Submit Form" [disabled] = "!rForm.valid">        
-        </div>
-      </div>
-    </form>
-</div> -->
-
-
-
+</div> 
 
 <ng-template #forminfo>
   <div class="form-container">
@@ -54,4 +31,25 @@
 
   </div>
 </ng-template>
+
+<!-- <div>
+    <form class="example-form" [formGroup]="taskForms" (ngSubmit)="showData()">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="task" type="text" formControlName="todo">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Leave a comment"></textarea>
+        </mat-form-field>
+        <input mat-raised-button color="primary" type="submit" value="Aceptar">
+
+      </form>
+
+
+</div> -->
+
+
+
+
+
 
