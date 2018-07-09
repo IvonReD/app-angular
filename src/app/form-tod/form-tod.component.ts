@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-tod',
@@ -39,6 +39,49 @@ constructor(private fb: FormBuilder) {
 addPost(post) {
   this.description = 'Descripcion: ' + post.description;
   this.name = 'Nombre tarea: ' + post.name;
+
 }
-}
+
+
+
+// taskForms: FormGroup;
+// tasks = [
+//   {
+//     'act': 'escribir'
+//   },
+//   {
+//     'act': 'leer libro'
+//   }
+// ]
+
+// constructor(private fb: FormBuilder) {
+
+// }
+
+//  ngOnInit() {
+//   this.createForm(this.tasks);
+//  }
+
+//  public createForm(tasks) {
+//   const arr = [];
+//   for (const i = 0; i < tasks.length; i++) {
+//    arr.push(this.buildTask(tasks[i]));
+//   }
+//    this.taskForms = this.fb.group({
+//      todo: [''],
+//      task: this.fb.array(arr)
+//    });
+//  }
+
+//  buildTask(tasks): FormGroup {
+//    return this.fb.group({
+//      title: [tasks.act],
+//      value: ['']
+//    });
+//  }
+
+//  showData() {
+//    console.log(this.taskForms.value);
+//  }
+// }
 
