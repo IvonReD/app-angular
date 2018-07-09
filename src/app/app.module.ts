@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatButtonModule, MatCardModule} from '@angular/material';
+// tslint:disable-next-line:max-line-length
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatCardModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { BitcoinPageComponent } from './bitcoin-page/bitcoin-page.component';
@@ -49,7 +50,6 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     MatInputModule,
-    MatButtonModule,
     ReactiveFormsModule
   ],
   providers: [],
